@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Kumar Tyagi | AI & ML Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Ankit Kumar Tyagi - Aspiring AI/ML Engineer, Python Developer, and Data Science Enthusiast.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP for core animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Three.js for 3D graphics -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="glowing-logo">AKT</div>
+            <div class="loader-text">Initializing AI Portfolio...</div>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Background 3D Canvas -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">AKT<span class="accent">.AI</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main>
+
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h4 class="hero-subtitle">SYSTEM STATUS: ONLINE</h4>
+                <h1 class="hero-title">Ankit Kumar Tyagi</h1>
+                <h2 class="typewriter-container">
+                    <span class="txt-type" data-wait="2000" data-words='["Aspiring AI Engineer", "Python Developer", "Computer Vision Enthusiast"]'></span>
+                </h2>
+                <p class="hero-desc">Engineering smart, autonomous models and full-stack data solutions designed for modern enterprise architecture.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>SCROLL TO EXPLORE</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-container">
+            <h2 class="section-title" data-text="01. ABOUT ME">01. ABOUT ME</h2>
+            <div class="about-grid">
+                <div class="glass-card about-main animate-on-scroll">
+                    <h3>Core Biography</h3>
+                    <p>I am a Computer Science Engineering undergraduate student specializing in processing, training, and deploying intelligent models. My academic trajectory at Lamrin Tech Skills University revolves around converting chaotic datasets into scalable, production-ready architectures.</p>
+                    <p>Fueled by Design Thinking frameworks, my engineering approach values technical optimization alongside clear, UX-centric UI execution.</p>
+                </div>
+                <!-- Interactive Stats Section (Referencing image_df7082.png) -->
+                <div class="about-stats">
+                    <a href="#projects" class="stat-link animate-on-scroll" title="Go to Core Projects">
+                        <div class="stat-card glass-card">
+                            <span class="stat-number" data-target="10">0</span><span class="stat-accent">+</span>
+                            <p class="stat-label">Core Projects</p>
+                        </div>
+                    </a>
+                    <a href="#certifications" class="stat-link animate-on-scroll" title="Go to Certifications">
+                        <div class="stat-card glass-card">
+                            <span class="stat-number" data-target="7">0</span><span class="stat-accent">+</span>
+                            <p class="stat-label">Certifications</p>
+                        </div>
+                    </a>
+                    <a href="#experience" class="stat-link animate-on-scroll" title="Go to Work Timeline">
+                        <div class="stat-card glass-card">
+                            <span class="stat-number" data-target="3">0</span><span class="stat-accent">M</span>
+                            <p class="stat-label">Internship Duration</p>
+                        </div>
+                    </a>
+                    <a href="#skills" class="stat-link animate-on-scroll" title="Go to Technical Skills">
+                        <div class="stat-card glass-card">
+                            <span class="stat-number" data-target="15">0</span><span class="stat-accent">+</span>
+                            <p class="stat-label">Tools Mastered</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-container">
+            <h2 class="section-title" data-text="02. TECHNICAL SKILLS">02. TECHNICAL SKILLS</h2>
+            <div class="skills-layout">
+                <div class="skills-info-panel glass-card animate-on-scroll">
+                    <h3>AI Skill Matrix Core</h3>
+                    <p>Interact with the central vector environment. Hover over the nodes or categories below to evaluate specialized proficiency metrics.</p>
+                    <div class="skills-legend">
+                        <div class="legend-item"><span class="dot primary-dot"></span> Language / Core</div>
+                        <div class="legend-item"><span class="dot secondary-dot"></span> Light ML Matrix</div>
+                        <div class="legend-item"><span class="dot accent-dot"></span> Web Infrastructure</div>
+                    </div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category glass-card animate-on-scroll">
+                        <h4><i class="fa-solid fa-code icon-lang"></i> Development & Logic</h4>
+                        <ul>
+                            <li class="skill-tag">Python</li>
+                            <li class="skill-tag">Java</li>
+                            <li class="skill-tag">C++</li>
+                            <li class="skill-tag">Data Structures (DSA)</li>
+                            <li class="skill-tag">OOP</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category glass-card animate-on-scroll">
+                        <h4><i class="fa-solid fa-brain icon-ai"></i> Data Science & AI</h4>
+                        <ul>
+                            <li class="skill-tag">Machine Learning</li>
+                            <li class="skill-tag">Exploratory Data Analysis (EDA)</li>
+                            <li class="skill-tag">Data Preprocessing</li>
+                            <li class="skill-tag">Model Deployment</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category glass-card animate-on-scroll">
+                        <h4><i class="fa-solid fa-cloud icon-web"></i> Infrastructure & Web</h4>
+                        <ul>
+                            <li class="skill-tag">HTML5 / CSS3</li>
+                            <li class="skill-tag">Vanilla JavaScript</li>
+                            <li class="skill-tag">AWS Cloud</li>
+                            <li class="skill-tag">Git / GitHub</li>
+                            <li class="skill-tag">VS Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section-container">
+            <h2 class="section-title" data-text="03. WORK TIMELINE">03. WORK TIMELINE</h2>
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+                <div class="timeline-item left animate-on-scroll">
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Dec 2025 – Feb 2026</span>
+                        <h3>Data Science Intern</h3>
+                        <h4 class="company-name">InternBoot</h4>
+                        <ul class="timeline-details">
+                            <li>Executed extensive EDA workflows and engineered statistical preprocessing steps on structural data vectors.</li>
+                            <li>Designed predictive models leveraging optimized regression and classification algorithms.</li>
+                            <li>Engineered localized model inference deployment pipelines ensuring real-time operational processing metrics.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-container">
+            <h2 class="section-title" data-text="04. RECENT DEPLOYMENTS">04. RECENT DEPLOYMENTS</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-header">
+                        <i class="fa-solid fa-traffic-light project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/ankitkumartyagi05" target="_blank" title="View Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>AI-Powered Traffic Management</h3>
+                    <p>Computer vision platform designed for analyzing traffic vectors, real-time density calculation, and adaptive green-light routing metrics.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>OpenCV</span><span>ML Algorithms</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-header">
+                        <i class="fa-solid fa-seedling project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/ankitkumartyagi05" target="_blank" title="View Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>AI Crop Health Predictor</h3>
+                    <p>Deep classification model analyzing multi-spectral plant foliage images to diagnose cellular pathogens and output optimal treatment workflows.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Data Preprocessing</span><span>Inference</span>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-header">
+                        <i class="fa-solid fa-chart-line project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/ankitkumartyagi05" target="_blank" title="View Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Sales Analytics Deployment</h3>
+                    <p>End-to-end regression system processing structural pipeline metrics, combined with cloud analytics frameworks for market predictions.</p>
+                    <div class="project-tech">
+                        <span>EDA</span><span>Predictive Modeling</span><span>AWS Mini</span>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-header">
+                        <i class="fa-solid fa-money-check-dollar project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/ankitkumartyagi05" target="_blank" title="View Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>ATM Object Simulation</h3>
+                    <p>OOP architecture enforcing rigorous procedural banking protocols, concurrency constraints, and user state telemetry records.</p>
+                    <div class="project-tech">
+                        <span>Core Java</span><span>OOP Implementation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section-container">
+            <h2 class="section-title" data-text="05. CREDENTIALS">05. CREDENTIALS</h2>
+            <div class="certifications-slider">
+                <div class="cert-card glass-card animate-on-scroll">
+                    <i class="fa-brands fa-aws cert-icon"></i>
+                    <h3>AWS Solution Architect</h3>
+                    <p>Cloud Architecture Infrastructure & Service Management</p>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <i class="fa-solid fa-brain cert-icon"></i>
+                    <h3>Generative AI Bootcamp</h3>
+                    <p>LLM Fine-Tune Architecture & Vector Databases (RAG)</p>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <i class="fa-solid fa-code cert-icon"></i>
+                    <h3>Frontend Development</h3>
+                    <p>Modern Responsive Engine Frameworks & Layout Systems</p>
+                </div>
+                <div class="cert-card glass-card animate-on-scroll">
+                    <i class="fa-solid fa-bezier-curve cert-icon"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>User Empathy Architecture & Prototyping Systems</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-container">
+            <h2 class="section-title" data-text="06. TERMINAL CONNECTION">06. TERMINAL CONNECTION</h2>
+            <div class="contact-grid">
+                <div class="contact-info glass-card animate-on-scroll">
+                    <h3>Transmission Hub</h3>
+                    <p>Open for project collaboration, pipeline optimizations, or engineering roles. Send a secure payload request through the console.</p>
+                    <div class="info-links">
+                        <a href="mailto:ankitkumartyagi05@gmail.com" class="info-item"><i class="fa-solid fa-envelope"></i> ankitkumartyagi05@gmail.com</a>
+                        <a href="https://github.com/ankitkumartyagi05" target="_blank" class="info-item"><i class="fa-brands fa-github"></i> GitHub Core Profile</a>
+                        <a href="https://www.linkedin.com/in/ankit-kumar-tyagi-/" target="_blank" class="info-item"><i class="fa-brands fa-linkedin"></i> LinkedIn Node Connection</a>
+                    </div>
+                </div>
+                <form class="contact-form glass-card animate-on-scroll" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="name">Identifier (Name)</label>
+                        <input type="text" id="name" required placeholder="User-01">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Network Node (Email)</label>
+                        <input type="email" id="email" required placeholder="name@domain.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Payload Details (Message)</label>
+                        <textarea id="message" rows="5" required placeholder="Enter transmission packet..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Transmit Signal</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Ankit Kumar Tyagi. All Node Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/ankitkumartyagi05" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ankit-kumar-tyagi-/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <button id="back-to-top" class="back-to-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
