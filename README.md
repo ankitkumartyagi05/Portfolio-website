@@ -1,7 +1,6 @@
 # 🌌 Futuristic 3D AI/ML Portfolio — Ankit Kumar Tyagi
 
 <div align="center">
-  <img src="watermarked_img_11954622436626289651.png" alt="AKT Logo" width="180"/>
   <br/>
   
   [![System Status](https://img.shields.io/badge/SYSTEM_STATUS-ONLINE-00FFB3?style=for-the-badge&logo=statuspage&logoColor=050816)](#)
